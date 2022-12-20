@@ -1,0 +1,50 @@
+libvidstab (1.1.0-deepin1) unstable; urgency=medium
+
+  * Rebuild
+
+ -- Deepin Packages Builder <packages@deepin.org>  Fri, 11 Nov 2022 18:00:16 +0800
+
+libvidstab (1.1.0-2) unstable; urgency=low
+
+  [James Cowgill]
+  * Enable Multi-Arch: same in debian/control (Closes: #909380)
+
+  [Helmut Grohne]
+  * Explicitly choose where to use -msse2. (Closes: #910100)
+    - Currently only AMD64
+
+ -- Keng-Yu Lin <kengyu@lexical.tw>  Sun, 14 Oct 2018 01:27:10 +0800
+
+libvidstab (1.1.0-1) unstable; urgency=low
+
+  * Upstream release 1.1.0 (Closes: #709193)
+
+ -- Keng-Yu Lin <kengyu@lexical.tw>  Wed, 01 Aug 2018 14:39:07 +0800
+
+libvidstab (1.0.0-1) unstable; urgency=medium
+
+  * debian/rules: Add changes that will be dropped for next upstream version.
+  * New upstream version 0.98
+  * debian/{compat,control}: Update debhelper compat to 10.
+  * debian/control:
+    + Add upstream homepage.
+    + Add Vcs-* fields.
+    + Add proper short and long descriptions.
+    + Fix SONAME in shared library.
+    + Add misc-depends, since we are using debhelper.
+    + Remove redundant field from previous packaging versions.
+  * debian:
+    + Normalize with `wrap-and-sort -s -a -v`.
+  * debian/rules:
+    + Fix grave bug with respect to spaces vs. tab on makefile.
+    + Ignore the custom rules for the moment.
+  * debian/libvidstab*.install: Rename to be consistent with SONAME.
+  * debian/watch:
+    + Update to version 4 to fix detection of new releases.
+  * New upstream version 1.0.0
+  * debian/docs:
+    + Change from README to README.md to follow upstream.
+  * debian/{control,libvidstat1.1.install}:
+    + Fix for new SONAME.
+
+ -- Rogério Brito <rbrito@ime.usp.br>  Wed, 07 Jun 2017 19:47:43 -0300
