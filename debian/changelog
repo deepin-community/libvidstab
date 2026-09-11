@@ -1,3 +1,9 @@
+libvidstab (1.1.0-deepin2) unstable; urgency=medium
+
+  * Rebuild with LTO enabled (dpkg vendor feature optimize/lto).
+
+ -- tunaichao <tunaichao@uniontech.com>  Fri, 11 Sep 2026 16:48:20 +0800
+
 libvidstab (1.1.0-deepin1) unstable; urgency=medium
 
   * Rebuild
